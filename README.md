@@ -31,6 +31,7 @@ obs-studio python thunar tumbler jq polybar awesome-terminal-fonts rofi
 sudo pacman -S htop links cmus neofetch cava ueberzug w3m
 
 #YAY-------------------------------------------------
+
 git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
