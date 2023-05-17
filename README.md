@@ -1,6 +1,6 @@
 # Dotfiles
 ##Installing for BSPWM
-#KEYBOARD--------------------------------------------
+#KEYBOARD---------------------------------------------------------------------------------------
 sudo nano /etc/X11/xorg.conf.d/00-keyboard.conf
 
 Section "InputClass"
@@ -11,7 +11,7 @@ Section "InputClass"
     Option "XkbOptions" "grp:alt_shift_toggle"
 EndSection
 
-#BSPWM INSTALL---------------------------------------
+#BSPWM INSTALL-----------------------------------------------------------------------------------
 
 sudo pacman -S xorg xorg-xinit mesa bspwm git base-devel sxhkd alacritty
 
@@ -21,34 +21,34 @@ exec bspwm
 
 chmod u+x .config/bspwm/bspwmrc
 
-#SOFT------------------------------------------------
+#SOFT---------------------------------------------------------------------------------------------
 
 sudo pacman -S pulseaudio pavucontrol mpv gimp inkscape telegram-desktop lxappearance nitrogen imv
 obs-studio python thunar tumbler jq polybar awesome-terminal-fonts rofi
 
-#TERMINAL SOFT---------------------------------------
+#TERMINAL SOFT-----------------------------------------------------------------------------------
 
 sudo pacman -S htop links cmus neofetch cava ueberzug w3m
 
-#YAY-------------------------------------------------
+#YAY---------------------------------------------------------------------------------------------
 
 git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
 
-#PICOM-----------------------------------------------
+#PICOM------------------------------------------------------------------------------------------
 
 yay picom-jonaburg-git
 
-#CHROME----------------------------------------------
+#CHROME-----------------------------------------------------------------------------------------
 
 yay -S google-chrome
 
-#FONT------------------------------------------------
+#FONT------------------------------------------------------------------------------------------
 
 yay -S nerd-fonts ttf-jetbrains-mono ttc-iosevka
 
-#SDDM------------------------------------------------
+#SDDM------------------------------------------------------------------------------------------
 
 yay -S sddm sddm-theme-corners-git
 
